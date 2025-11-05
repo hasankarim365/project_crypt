@@ -30,3 +30,5 @@ Since the shift has to be a number between 1 and 25, (0 or 26 would result in an
 If you happen to know what a piece of the ciphertext is, or you can guess a piece, then this will allow you to immediately find the key.
 If this is not possible, a more systematic approach is to calculate the frequency distribution of the letters in the cipher text.
 This consists of counting how many times each letter appears. Natural English text has a very distinct distribution that can be used help crack codes.
+
+         
