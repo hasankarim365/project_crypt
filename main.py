@@ -1,3 +1,5 @@
 import cypher_lib
 
-cypher_lib.atbash()
+x = False
+while x == False:
+    x = cypher_lib.atbash()
