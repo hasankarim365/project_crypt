@@ -1,0 +1,6 @@
+--------------- Atbash ---------------
+
+Atbash is a very simplistic cipher where you change A to Z, B to Y, and so on
+The Atbash cipher is a very common and simple cipher that simply encodes a message with the reverse of the alphabet.
+Initially it was used with Hebrew. Basically, when encoded, an "A" becomes a "Z", "B" turns into "Y", etc.
+
