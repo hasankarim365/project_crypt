@@ -15,7 +15,7 @@ The ROT13 cipher offers almost no security, and can be broken very easily.
 Even if an adversary doesn't know a piece of ciphertext has been enciphered with the ROT13 cipher, they can still break it by assuming it is a substitution cipher and determining the key using hill-climbing.
 The ROT13 cipher is also an Caesar cipher with a key of 13, so breaking it as a Caesar cipher also works.
 
---------------- Ceaser ---------------
+--------------- Caeser ---------------
 
 The Caesar cipher is one of the earliest known and simplest ciphers.
 It is a type of substitution cipher in which each letter in the plaintext is 'shifted' a certain number of places down the alphabet.
@@ -31,4 +31,10 @@ If you happen to know what a piece of the ciphertext is, or you can guess a piec
 If this is not possible, a more systematic approach is to calculate the frequency distribution of the letters in the cipher text.
 This consists of counting how many times each letter appears. Natural English text has a very distinct distribution that can be used help crack codes.
 
-         
+--------------- Affine ---------------
+
+The Affine cipher is a special case of the more general monoalphabetic substitution cipher.
+The cipher is less secure than a substitution cipher as it is vulnerable to all of the attacks that work against substitution ciphers, in addition to other attacks.
+The cipher's primary weakness comes from the fact that if the cryptanalyst can discover (by means of frequency analysis, brute force, guessing or otherwise) the plaintext of two ciphertext characters,
+then the key can be obtained by solving a simultaneous equation [1].
+
