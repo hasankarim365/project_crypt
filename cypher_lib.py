@@ -117,3 +117,29 @@ def baconian():
     return output
     
 
+def polybius_square():
+    set_polybius_square = {
+    'A': 'AA', 'B': 'AB', 'C': 'AC', 'D': 'AD', 'E': 'AE',
+    'F': 'BA', 'G': 'BB', 'H': 'BC', 'I': 'BD', 'J': 'BE',
+    'K': 'CA', 'L': 'CB', 'M': 'CC', 'N': 'CD', 'O': 'CE',
+    'P': 'DA', 'Q': 'DB', 'R': 'DC', 'S': 'DD', 'T': 'DE',
+    'U': 'EA', 'V': 'EB', 'W': 'EC', 'X': 'ED', 'Y': 'EE',
+    'Z': 'FA'
+    }
+    output = []
+    userInput = str(input("Input a word or sentance you want to encrypt: ")).upper()
+    for char in userInput:
+        if char == " ": 
+            output.append("  ") 
+        elif char.isalpha():
+            for key, value in set_polybius_square.items():
+                if char == key:
+                    output.append(value + " ")
+                    break  
+        else:
+            output.append(char + " ")
+    output = "".join(output)
+    print(output)
+    return output
+            
+polybius_square()
